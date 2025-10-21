@@ -1,0 +1,21 @@
+[2025-10-21 21:16:47] [RUN] git checkout main
+[2025-10-21 21:16:47] Your branch is up to date with 'origin/main'.
+[2025-10-21 21:16:47] Already on 'main'
+[2025-10-21 21:16:48] [RUN] git pull origin main
+[2025-10-21 21:16:48] From https://github.com/MuzahidurSaim/Group-4
+[2025-10-21 21:16:48]  * branch            main       -> FETCH_HEAD
+[2025-10-21 21:16:48] Already up to date.
+[2025-10-21 21:19:43] [RUN] git checkout -b testB
+[2025-10-21 21:19:43] Switched to a new branch 'testB'
+🔄 Syncing 'testB' with latest main...
+[2025-10-21 21:19:43] [RUN] git fetch origin
+[2025-10-21 21:19:59] [RUN] git merge origin/main
+[2025-10-21 21:19:59] Already up to date.
+[2025-10-21 21:19:59] [RUN] git status
+[2025-10-21 21:19:59] On branch testB
+[2025-10-21 21:19:59] Untracked files:
+[2025-10-21 21:19:59]   (use "git add <file>..." to include in what will be committed)
+[2025-10-21 21:19:59] 	sync.log
+[2025-10-21 21:19:59] 
+[2025-10-21 21:19:59] nothing added to commit but untracked files present (use "git add" to track)
+[2025-10-21 21:20:12] [RUN] git add .
