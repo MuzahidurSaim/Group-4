@@ -19,3 +19,118 @@
 [2025-10-21 21:19:59] 
 [2025-10-21 21:19:59] nothing added to commit but untracked files present (use "git add" to track)
 [2025-10-21 21:20:12] [RUN] git add .
+[2025-10-21 21:20:12] warning: in the working copy of 'sync.log', LF will be replaced by CRLF the next time Git touches it
+[2025-10-21 21:20:36] [RUN] git commit -m "testing script" -m "testing final script"
+[2025-10-21 21:20:36] [testB 5177a36] testing script
+[2025-10-21 21:20:36]  1 file changed, 21 insertions(+)
+[2025-10-21 21:20:36]  create mode 100644 sync.log
+[2025-10-21 21:20:42] [RUN] git push -u origin testB
+[2025-10-21 21:20:42] remote: 
+[2025-10-21 21:20:42] remote: Create a pull request for 'testB' on GitHub by visiting:        
+[2025-10-21 21:20:42] remote:      https://github.com/MuzahidurSaim/Group-4/pull/new/testB        
+[2025-10-21 21:20:42] remote: 
+[2025-10-21 21:20:42] branch 'testB' set up to track 'origin/testB'.
+[2025-10-21 21:20:42] To https://github.com/MuzahidurSaim/Group-4
+[2025-10-21 21:20:42]  * [new branch]      testB -> testB
+👉 Now open a Pull Request on GitHub for branch 'testB' into main.
+Repo: ./Group-4
+Branch: testB
+Last commit: 5177a36 - testing script (11 seconds ago) <MuzahidurSaim>
+
+[2025-10-21 21:30:42] [DRY-RUN] git checkout main
+[2025-10-21 21:30:42] [DRY-RUN] git pull origin main
+[2025-10-21 21:40:45] [RUN] git checkout main
+[2025-10-21 21:40:45] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-21 21:40:45] 	sync.log
+[2025-10-21 21:40:45] Please commit your changes or stash them before you switch branches.
+[2025-10-21 21:40:45] Aborting
+[2025-10-21 21:40:46] [RUN] git pull origin main
+[2025-10-21 21:40:46] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-21 21:40:46] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-21 21:48:31] [RUN] git checkout main
+[2025-10-21 21:48:31] ./sync.sh: line 22: git checkout main: command not found
+[2025-10-21 21:48:32] [RUN] git pull origin main
+[2025-10-21 21:48:32] ./sync.sh: line 22: git pull origin main: command not found
+👋 Exiting script as requested.
+[2025-10-21 21:53:35] [RUN] git checkout main
+[2025-10-21 21:53:35] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-21 21:53:35] 	sync.log
+[2025-10-21 21:53:35] Please commit your changes or stash them before you switch branches.
+[2025-10-21 21:53:35] Aborting
+[2025-10-21 21:53:36] [RUN] git pull origin main
+[2025-10-21 21:53:36] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-21 21:53:36] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-21 21:59:56] [RUN] git checkout main
+[2025-10-21 21:59:56] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-21 21:59:56] 	sync.log
+[2025-10-21 21:59:56] Please commit your changes or stash them before you switch branches.
+[2025-10-21 21:59:56] Aborting
+[2025-10-21 21:59:57] [RUN] git pull origin main
+[2025-10-21 21:59:57] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-21 21:59:57] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-21 23:53:31] [RUN] git checkout main
+[2025-10-21 23:53:31] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-21 23:53:31] 	sync.log
+[2025-10-21 23:53:31] Please commit your changes or stash them before you switch branches.
+[2025-10-21 23:53:31] Aborting
+[2025-10-21 23:53:31] [RUN] git pull origin main
+[2025-10-21 23:53:31] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-21 23:53:31] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-23 00:17:26] [RUN] git checkout main
+[2025-10-23 00:17:26] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-23 00:17:26] 	sync.log
+[2025-10-23 00:17:26] Please commit your changes or stash them before you switch branches.
+[2025-10-23 00:17:26] Aborting
+[2025-10-23 00:17:27] [RUN] git pull origin main
+[2025-10-23 00:17:27] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-23 00:17:27] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-23 03:01:38] [RUN] git checkout main
+[2025-10-23 03:01:38] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-23 03:01:38] 	sync.log
+[2025-10-23 03:01:38] Please commit your changes or stash them before you switch branches.
+[2025-10-23 03:01:38] Aborting
+[2025-10-23 03:01:38] [RUN] git pull origin main
+[2025-10-23 03:01:38] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-23 03:01:38] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-23 08:55:13] [RUN] git checkout main
+[2025-10-23 08:55:13] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-23 08:55:13] 	sync.log
+[2025-10-23 08:55:13] Please commit your changes or stash them before you switch branches.
+[2025-10-23 08:55:13] Aborting
+[2025-10-23 08:55:14] [RUN] git pull origin main
+[2025-10-23 08:55:14] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-23 08:55:14] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-10-26 21:20:04] [RUN] git checkout main
+[2025-10-26 21:20:04] error: Your local changes to the following files would be overwritten by checkout:
+[2025-10-26 21:20:04] 	sync.log
+[2025-10-26 21:20:04] Please commit your changes or stash them before you switch branches.
+[2025-10-26 21:20:04] Aborting
+[2025-10-26 21:20:04] [RUN] git pull origin main
+[2025-10-26 21:20:04] error: cannot pull with rebase: You have unstaged changes.
+[2025-10-26 21:20:04] error: Please commit or stash them.
+[2025-10-26 21:21:13] [RUN] git checkout -b model_dev
+[2025-10-26 21:21:13] Switched to a new branch 'model_dev'
+🔄 Syncing 'model_dev' with latest main...
+[2025-10-26 21:21:13] [RUN] git fetch origin
+[2025-10-26 21:21:13] From https://github.com/MuzahidurSaim/Group-4
+[2025-10-26 21:21:13]    a245888..9b7fde2  main       -> origin/main
+[2025-10-26 21:23:08] [RUN] git merge origin/main
+[2025-10-26 21:23:08] Updating 5177a36..9b7fde2
+[2025-10-26 21:23:08] Fast-forward
+[2025-10-26 21:23:09] [RUN] git status
+[2025-10-26 21:23:09] On branch model_dev
+[2025-10-26 21:23:09] Changes not staged for commit:
+[2025-10-26 21:23:09]   (use "git add <file>..." to update what will be committed)
+[2025-10-26 21:23:09]   (use "git restore <file>..." to discard changes in working directory)
+[2025-10-26 21:23:09] 	modified:   README.md
+[2025-10-26 21:23:09] 	modified:   sync.log
+[2025-10-26 21:23:09] 
+[2025-10-26 21:23:09] no changes added to commit (use "git add" and/or "git commit -a")
+[2025-10-26 21:23:32] [RUN] git add .
