@@ -82,3 +82,42 @@
 [2025-11-10 15:44:00] 	sync.log
 [2025-11-10 15:44:00] 
 [2025-11-10 15:44:06] [RUN] git add .
+[2025-11-11 23:02:01] [RUN] git checkout main
+[2025-11-11 23:02:01] M	README.md
+[2025-11-11 23:02:01] M	frontend/public/index.html
+[2025-11-11 23:02:01] M	frontend/src/background.jpg
+[2025-11-11 23:02:01] M	frontend/src/logo.png
+[2025-11-11 23:02:01] D	saved_models/2.keras
+[2025-11-11 23:02:01] M	sync.log
+[2025-11-11 23:02:01] M	training/training.ipynb
+[2025-11-11 23:02:01] Your branch is up to date with 'origin/main'.
+[2025-11-11 23:02:01] Already on 'main'
+[2025-11-11 23:02:02] [RUN] git pull origin main
+[2025-11-11 23:02:02] error: cannot pull with rebase: You have unstaged changes.
+[2025-11-11 23:02:02] error: Please commit or stash them.
+[2025-11-11 23:02:10] [RUN] git checkout -b intial_weapp
+[2025-11-11 23:02:10] Switched to a new branch 'intial_weapp'
+🔄 Syncing 'intial_weapp' with latest main...
+[2025-11-11 23:02:10] [RUN] git fetch origin
+[2025-11-11 23:02:15] [RUN] git merge origin/main
+[2025-11-11 23:02:15] Already up to date.
+[2025-11-11 23:02:15] [RUN] git status
+[2025-11-11 23:02:15] On branch intial_weapp
+[2025-11-11 23:02:15] Changes not staged for commit:
+[2025-11-11 23:02:15]   (use "git add/rm <file>..." to update what will be committed)
+[2025-11-11 23:02:15]   (use "git restore <file>..." to discard changes in working directory)
+[2025-11-11 23:02:15] 	modified:   README.md
+[2025-11-11 23:02:15] 	modified:   frontend/public/index.html
+[2025-11-11 23:02:15] 	modified:   frontend/src/background.jpg
+[2025-11-11 23:02:15] 	modified:   frontend/src/logo.png
+[2025-11-11 23:02:15] 	deleted:    saved_models/2.keras
+[2025-11-11 23:02:15] 	modified:   sync.log
+[2025-11-11 23:02:15] 	modified:   training/training.ipynb
+[2025-11-11 23:02:15] 
+[2025-11-11 23:02:15] Untracked files:
+[2025-11-11 23:02:15]   (use "git add <file>..." to include in what will be committed)
+[2025-11-11 23:02:15] 	api/__pycache__/
+[2025-11-11 23:02:15] 	frontend/public/logo.png
+[2025-11-11 23:02:15] 
+[2025-11-11 23:02:15] no changes added to commit (use "git add" and/or "git commit -a")
+[2025-11-11 23:02:20] [RUN] git add .
