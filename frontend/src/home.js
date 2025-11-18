@@ -14,6 +14,7 @@ import image from "./background.jpg";
 import { DropzoneArea } from 'material-ui-dropzone';
 import { common } from '@material-ui/core/colors';
 import Clear from '@material-ui/icons/Clear';
+import IconButton from "@material-ui/core/IconButton";
 
 
 const ColorButton = withStyles((theme) => ({
@@ -63,14 +64,15 @@ const useStyles = makeStyles((theme) => ({
     height: "93vh",
     marginTop: "8px",
   },
-  imageCard: {
-    margin: "auto",
-    maxWidth: 400,
-    height: 500,
-    backgroundColor: 'transparent',
-    boxShadow: '0px 9px 70px 0px rgb(0 0 0 / 30%) !important',
-    borderRadius: '15px',
-  },
+    imageCard: {
+        position: 'relative',   // anchor for the cross
+        margin: "auto",
+        maxWidth: 400,
+        height: 500,
+        backgroundColor: 'transparent',
+        boxShadow: '0px 9px 70px 0px rgb(0 0 0 / 30%) !important',
+        borderRadius: '15px',
+    },
   imageCardEmpty: {
     height: 'auto',
   },
@@ -98,14 +100,24 @@ const useStyles = makeStyles((theme) => ({
   tableRow: {
     backgroundColor: 'transparent !important',
   },
-  tableCell: {
-    fontSize: '22px',
-    backgroundColor: 'transparent !important',
-    borderColor: 'transparent !important',
-    color: '#000000a6 !important',
-    fontWeight: 'bolder',
-    padding: '1px 24px 1px 16px',
-  },
+    tableCell: {
+        fontSize: '16px',                 // smaller text size
+        backgroundColor: 'transparent !important',
+        borderColor: 'transparent !important',
+        color: '#000000a6 !important',
+        fontWeight: 'bolder',
+        padding: '4px 16px',              // tighter padding
+        whiteSpace: 'nowrap',             // prevent wrapping
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',         // add "..." if too long
+    },
+    tableCellLabel: {
+        fontSize: '16px',
+        maxWidth: '200px',                // limit width
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+    },
   tableCell1: {
     fontSize: '14px',
     backgroundColor: 'transparent !important',
@@ -121,10 +133,6 @@ const useStyles = makeStyles((theme) => ({
     color: 'white !important',
     textAlign: 'center',
   },
-  buttonGrid: {
-    maxWidth: "416px",
-    width: "100%",
-  },
   detail: {
     backgroundColor: 'white',
     display: 'flex',
@@ -133,13 +141,86 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   appbar: {
-    background: '#be6a77',
+    background: '#cddc39',
     boxShadow: 'none',
     color: 'white'
   },
   loader: {
     color: '#be6a77 !important',
-  }
+  },
+    logoAvatar: {
+        borderRadius: '50%',
+        padding: '6px',
+        boxShadow: '0px 2px 6px rgba(0,0,0,0.3)',
+        width: theme.spacing(8),
+        height: theme.spacing(8),
+        transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+        '&:hover': {
+            transform: 'scale(1.1)', // gentle zoom
+            boxShadow: '0px 4px 12px rgba(0,0,0,0.4)', // stronger shadow on hover
+        },
+    },
+    titleBlock: {
+        display: 'inline-block',
+        padding: '10px 20px',
+        background: 'linear-gradient(135deg, rgba(255,255,255,0.85) 0%, rgba(205,220,57,0.95) 100%)',
+        transform: 'skew(-20deg)',   // stronger oblique angle
+        borderRadius: '10px',
+        backdropFilter: 'blur(2px)', // lighter blur, keeps text crisp
+        boxShadow: '0px 4px 12px rgba(0,0,0,0.2)', // adds depth
+    },
+    titleMain: {
+        transform: 'skew(20deg)',    // counter-skew text more strongly
+        fontWeight: 900,
+        color: '#1b5e20',
+        textShadow: '2px 2px 4px rgba(0,0,0,0.25)', // stronger shadow for contrast
+    },
+    titleSub: {
+        transform: 'skew(20deg)',
+        fontWeight: 600,
+        color: '#222222',            // darker gray for clarity
+        letterSpacing: '2px',
+        textTransform: 'uppercase',
+    },
+    dropzone: {
+        border: '2px solid #cddc39',
+        borderRadius: '12px',
+        backgroundColor: '#f9fbe7', // soft lime background
+        transition: 'all 0.3s ease',
+        '&:hover': {
+            backgroundColor: '#cddc39',
+            color: 'white',
+            boxShadow: '0px 4px 16px rgba(0,0,0,0.25)',
+            transform: 'translateY(-3px)', // subtle lift
+        },
+        '& .MuiDropzoneArea-text': {
+            color: '#333',
+            fontWeight: 700,
+            letterSpacing: '1px',
+        },
+    },
+    clearIcon: {
+        position: 'absolute',
+        top: 8,
+        right: 8,
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        borderRadius: '50%',
+        boxShadow: '0px 2px 6px rgba(0,0,0,0.3)',
+        zIndex: 2,
+        '&:hover': {
+            backgroundColor: 'rgba(255,255,255,1)',
+            transform: 'scale(1.1)',
+        },
+    },
+    content: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',          // fill card height
+        minHeight: '300px',      // ensure it’s clickable
+    }
+
+
 }));
 export const ImageUpload = () => {
   const classes = useStyles();
@@ -208,16 +289,22 @@ export const ImageUpload = () => {
 
   return (
     <React.Fragment>
-      <AppBar position="static" className={classes.appbar}>
-        <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Plant Disease Detection
-          </Typography>
-          <div className={classes.grow} />
-          <Avatar src={logo}></Avatar>
-        </Toolbar>
-      </AppBar>
-      <Container maxWidth={false} className={classes.mainContainer} disableGutters={true}>
+        <AppBar position="static" className={classes.appbar}>
+            <Toolbar>
+                <div className={classes.titleBlock}>
+                    <Typography variant="h2" className={classes.titleMain}>
+                        Plant Doc
+                    </Typography>
+                    <Typography variant="h4" className={classes.titleSub}>
+                        DETECT EARLY || GROW BETTER
+                    </Typography>
+                </div>
+                <div className={classes.grow} />
+                <Avatar src={logo} className={classes.logoAvatar}></Avatar>
+            </Toolbar>
+        </AppBar>
+
+        <Container maxWidth={false} className={classes.mainContainer} disableGutters={true}>
         <Grid
           className={classes.gridContainer}
           container
@@ -226,59 +313,79 @@ export const ImageUpload = () => {
           alignItems="center"
           spacing={2}
         >
-          <Grid item xs={12}>
-            <Card className={`${classes.imageCard} ${!image ? classes.imageCardEmpty : ''}`}>
-              {image && <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={preview}
-                  component="image"
-                  title="Contemplative Reptile"
-                />
-              </CardActionArea>
-              }
-              {!image && <CardContent className={classes.content}>
-                <DropzoneArea
-                  acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a potato plant leaf to process"}
-                  onChange={onSelectFile}
-                />
-              </CardContent>}
-              {data && <CardContent className={classes.detail}>
-                <TableContainer component={Paper} className={classes.tableContainer}>
-                  <Table className={classes.table} size="small" aria-label="simple table">
-                    <TableHead className={classes.tableHead}>
-                      <TableRow className={classes.tableRow}>
-                        <TableCell className={classes.tableCell1}>Label:</TableCell>
-                        <TableCell align="right" className={classes.tableCell1}>Confidence:</TableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody className={classes.tableBody}>
-                      <TableRow className={classes.tableRow}>
-                        <TableCell component="th" scope="row" className={classes.tableCell}>
-                          {data.class}
-                        </TableCell>
-                        <TableCell align="right" className={classes.tableCell}>{confidence}%</TableCell>
-                      </TableRow>
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </CardContent>}
-              {isLoading && <CardContent className={classes.detail}>
-                <CircularProgress color="secondary" className={classes.loader} />
-                <Typography className={classes.title} variant="h6" noWrap>
-                  Processing
-                </Typography>
-              </CardContent>}
-            </Card>
-          </Grid>
-          {data &&
-            <Grid item className={classes.buttonGrid} >
+            <Grid item xs={12}>
+                <div style={{ position: 'relative' }}>
+                    <Card className={`${classes.imageCard} ${!image ? classes.imageCardEmpty : ''}`}>
+                        {image && (
+                            <CardActionArea>
+                                <CardMedia
+                                    className={classes.media}
+                                    image={preview}
+                                    component="image"
+                                    title="Uploaded Leaf"
+                                />
+                            </CardActionArea>
+                        )}
+                        {!image && (
+                            <CardContent className={classes.content}>
+                                <DropzoneArea
+                                    acceptedFiles={['image/*']}
+                                    dropzoneText={"Drag and drop an image of a plant leaf to process"}
+                                    onChange={onSelectFile}
+                                    classes={{ root: classes.dropzone }}
+                                />
+                            </CardContent>
+                        )}
+                        {data && (
+                            <CardContent className={classes.detail}>
+                                <TableContainer component={Paper} className={classes.tableContainer}>
+                                    <Table className={classes.table} size="small" aria-label="results table">
+                                        <TableHead className={classes.tableHead}>
+                                            <TableRow className={classes.tableRow}>
+                                                <TableCell className={classes.tableCell1}>Label:</TableCell>
+                                                <TableCell align="right" className={classes.tableCell1}>Confidence:</TableCell>
+                                            </TableRow>
+                                        </TableHead>
+                                        <TableBody className={classes.tableBody}>
+                                            <TableRow className={classes.tableRow}>
+                                                <TableCell
+                                                    component="th"
+                                                    scope="row"
+                                                    className={classes.tableCellLabel}
+                                                    title={data.class} // tooltip shows full text
+                                                >
+                                                    {data.class}
+                                                </TableCell>
+                                                <TableCell align="right" className={classes.tableCell}>
+                                                    {confidence}%
+                                                </TableCell>
+                                            </TableRow>
+                                        </TableBody>
+                                    </Table>
+                                </TableContainer>
+                            </CardContent>
+                        )}
+                        {isLoading && (
+                            <CardContent className={classes.detail}>
+                                <CircularProgress color="secondary" className={classes.loader} />
+                                <Typography variant="h6" noWrap>
+                                    Processing...
+                                </Typography>
+                            </CardContent>
+                        )}
 
-              <ColorButton variant="contained" className={classes.clearButton} color="primary" component="span" size="large" onClick={clearData} startIcon={<Clear fontSize="large" />}>
-                Clear
-              </ColorButton>
-            </Grid>}
+                        {/* Cross icon overlay */}
+                        {image && (
+                            <IconButton
+                                className={classes.clearIcon}
+                                onClick={clearData}
+                            >
+                                <Clear />
+                            </IconButton>
+                        )}
+                    </Card>
+                </div>
+            </Grid>
         </Grid >
       </Container >
     </React.Fragment >
