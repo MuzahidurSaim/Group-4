@@ -114,3 +114,29 @@ This project will deliver a reliable and accessible mobile application for plant
 - Leaf Doctor. (n.d.). Retrieved from [https://apps.apple.com/us/app/leaf-doctor/id1003260350](https://apps.apple.com/us/app/leaf-doctor/id1003260350)
 - TensorFlow Lite. (n.d.). Retrieved from [https://www.tensorflow.org/lite](https://www.tensorflow.org/lite)
 - Interview Data & Voice Records. (2025). Project team’s primary research. Available at: *Google Drive Link*  
+
+---
+
+## 11. Model Training Data
+
+### Model Info
+
+- Two deployable checkpoints live in `Group-4/saved_models`: `latest_model.h5` (170 MB) and `model_epoch_61.keras` (170 MB). `class_names.json` is a lightweight 179 B label map; these file sizes come from `ls -lh`.
+
+- Loading `latest_model.h5` in TensorFlow shows a 3-block CNN with 14,840,008 trainable parameters (≈56.6 MB of weights). That summary also reports the layer stack (input preprocessing → 3×Conv/MaxPool → Flatten → Dense 128 → Dense 8) so you can cite it if needed.
+
+### Training Setup
+
+- Core hyperparameters and dataset target are defined in `training/training.ipynb`: 256×256 RGB inputs, batch size 32, PlantVillage directory as the source, and the model artifacts are persisted to `../saved_models`.
+
+- The notebook finds 6,627 labeled images across 8 disease/health classes, then splits them 80 %/10 %/10 % via `get_dataset_partitions_tf`. Each subset uses caching, shuffling, and `tf.data.AUTOTUNE` prefetching for throughput.
+
+- Preprocessing is embedded in the model graph: resize/rescale plus augmentation (`RandomFlip` + `RandomRotation`), so the exported model can accept raw 256×256 images at inference.
+
+- The convolutional stack is three `Conv2D` +` MaxPooling2D` blocks feeding a 128-unit dense head and an 8-way softmax classifier; no transfer learning backbone is used.
+
+- Training uses Adam with `SparseCategoricalCrossentropy` and tracks accuracy.
+
+- Checkpoints are written every epoch (`model_epoch_XX.keras`) and an `EarlyStopping` callback with patience 5 restores the best weights. The helper `resume_training` function later in the notebook supports fine-tuning or class-count changes by freezing/unfreezing layers and adjusting the final Dense layer before continuing.
+
+---

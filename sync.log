@@ -10086,3 +10086,282 @@ Last commit: 0cc73a6 - adding "8 more plants" with "8 more diseases". (26 minute
 [2025-11-21 07:48:07] 
 [2025-11-21 07:48:07] no changes added to commit (use "git add" and/or "git commit -a")
 [2025-11-21 07:48:12] [RUN] git add .
+[2025-11-21 07:48:12] warning: in the working copy of 'sync.log', LF will be replaced by CRLF the next time Git touches it
+[2025-11-21 07:48:37] [RUN] git commit -m adding the "test images" folder
+[2025-11-21 07:48:37] [test_images 935b283] adding the "test images" folder
+[2025-11-21 07:48:37]  136 files changed, 7694 insertions(+)
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (1).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (10).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (11).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (12).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (13).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (14).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (15).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (16).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (17).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (18).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (2).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (3).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (4).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (5).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (6).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (7).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (8).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - infected (9).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (1).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (10).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (11).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (12).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (13).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (14).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (15).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (16).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (17).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (18).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (2).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (3).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (4).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (5).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (6).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (7).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (8).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/pepper bell - safe (9).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (1).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (10).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (11).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (12).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (13).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (14).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (15).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (16).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (17).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (18).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (2).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (3).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (4).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (5).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (6).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (7).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (8).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - infected (9).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (1).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (2).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (3).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (4).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (5).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (6).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (7).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (8).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/potato - safe (9).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (1).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (10).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (11).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (12).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (13).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (14).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (15).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (16).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (17).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (18).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (2).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (3).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (4).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (5).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (6).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (7).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (8).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - infected (9).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (1).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (10).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (11).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (12).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (13).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (14).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (15).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (16).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (17).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (18).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (2).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (3).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (4).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (5).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (6).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (7).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (8).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/rice - safe (9).jpg
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (1).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (10).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (11).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (12).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (13).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (14).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (15).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (16).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (17).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (18).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (2).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (3).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (4).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (5).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (6).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (7).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (8).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - infected (9).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (1).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (10).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (11).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (12).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (13).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (14).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (15).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (16).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (17).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (18).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (2).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (3).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (4).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (5).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (6).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (7).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (8).JPG
+[2025-11-21 07:48:37]  create mode 100644 test images/tomato - safe (9).JPG
+[2025-11-21 07:48:59] [RUN] git push -u origin test_images
+[2025-11-21 07:48:59] remote: 
+[2025-11-21 07:48:59] remote: Create a pull request for 'test_images' on GitHub by visiting:        
+[2025-11-21 07:48:59] remote:      https://github.com/MuzahidurSaim/Group-4/pull/new/test_images        
+[2025-11-21 07:48:59] remote: 
+[2025-11-21 07:48:59] branch 'test_images' set up to track 'origin/test_images'.
+[2025-11-21 07:48:59] To https://github.com/MuzahidurSaim/Group-4.git
+[2025-11-21 07:48:59]  * [new branch]      test_images -> test_images
+👉 Now open a Pull Request on GitHub for branch 'test_images' into main.
+Repo: ./Group-4
+Branch: test_images
+Last commit: 935b283 - adding the "test images" folder (31 seconds ago) <MuzahidurSaim>
+
+[2025-11-22 06:54:11] [RUN] git checkout main
+[2025-11-22 06:54:11] error: Your local changes to the following files would be overwritten by checkout:
+[2025-11-22 06:54:11] 	sync.log
+[2025-11-22 06:54:11] Please commit your changes or stash them before you switch branches.
+[2025-11-22 06:54:11] Aborting
+[2025-11-22 06:54:15] [RUN] git pull origin main
+[2025-11-22 06:54:15] error: cannot pull with rebase: You have unstaged changes.
+[2025-11-22 06:54:15] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-11-22 21:55:43] [RUN] git checkout main
+[2025-11-22 21:55:43] error: Your local changes to the following files would be overwritten by checkout:
+[2025-11-22 21:55:43] 	sync.log
+[2025-11-22 21:55:43] Please commit your changes or stash them before you switch branches.
+[2025-11-22 21:55:43] Aborting
+[2025-11-22 21:55:45] [RUN] git pull origin main
+[2025-11-22 21:55:45] error: cannot pull with rebase: You have unstaged changes.
+[2025-11-22 21:55:45] error: Please commit or stash them.
+👋 Exiting script as requested.
+[2025-11-25 21:37:15] [RUN] git checkout main
+[2025-11-25 21:37:15] error: Your local changes to the following files would be overwritten by checkout:
+[2025-11-25 21:37:15] 	README.md
+[2025-11-25 21:37:15] 	api/main.py
+[2025-11-25 21:37:15] 	sync.log
+[2025-11-25 21:37:15] 	test images/tomato - infected (1).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (10).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (11).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (12).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (13).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (14).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (15).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (16).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (17).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (18).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (2).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (3).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (4).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (5).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (6).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (7).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (8).JPG
+[2025-11-25 21:37:15] 	test images/tomato - infected (9).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (1).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (10).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (11).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (12).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (13).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (14).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (15).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (16).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (17).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (18).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (2).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (3).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (4).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (5).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (6).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (7).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (8).JPG
+[2025-11-25 21:37:15] 	test images/tomato - safe (9).JPG
+[2025-11-25 21:37:15] 	training/training.ipynb
+[2025-11-25 21:37:15] Please commit your changes or stash them before you switch branches.
+[2025-11-25 21:37:15] Aborting
+[2025-11-25 21:37:23] [RUN] git pull origin main
+[2025-11-25 21:37:23] error: cannot pull with rebase: You have unstaged changes.
+[2025-11-25 21:37:23] error: Please commit or stash them.
+[2025-11-25 21:37:45] [RUN] git checkout -b working-on-app-started
+[2025-11-25 21:37:45] Switched to a new branch 'working-on-app-started'
+🔄 Syncing 'working-on-app-started' with latest main...
+[2025-11-25 21:37:46] [RUN] git fetch origin
+[2025-11-25 21:37:46] From https://github.com/MuzahidurSaim/Group-4
+[2025-11-25 21:37:46]    765b630..a6c068e  main       -> origin/main
+[2025-11-25 21:37:51] [RUN] git merge origin/main
+[2025-11-25 21:37:51] Updating 935b283..a6c068e
+[2025-11-25 21:37:51] Fast-forward
+[2025-11-25 21:37:51] [RUN] git status
+[2025-11-25 21:37:51] On branch working-on-app-started
+[2025-11-25 21:37:51] Changes not staged for commit:
+[2025-11-25 21:37:51]   (use "git add <file>..." to update what will be committed)
+[2025-11-25 21:37:51]   (use "git restore <file>..." to discard changes in working directory)
+[2025-11-25 21:37:51] 	modified:   README.md
+[2025-11-25 21:37:51] 	modified:   api/main.py
+[2025-11-25 21:37:51] 	modified:   sync.log
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (1).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (10).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (11).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (12).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (13).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (14).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (15).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (16).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (17).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (18).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (2).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (3).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (4).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (5).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (6).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (7).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (8).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - infected (9).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (1).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (10).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (11).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (12).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (13).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (14).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (15).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (16).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (17).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (18).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (2).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (3).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (4).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (5).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (6).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (7).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (8).JPG
+[2025-11-25 21:37:51] 	modified:   test images/tomato - safe (9).JPG
+[2025-11-25 21:37:51] 	modified:   training/training.ipynb
+[2025-11-25 21:37:51] 
+[2025-11-25 21:37:51] Untracked files:
+[2025-11-25 21:37:51]   (use "git add <file>..." to include in what will be committed)
+[2025-11-25 21:37:51] 	frontend/.env copy
+[2025-11-25 21:37:51] 	gcp/
+[2025-11-25 21:37:51] 
+[2025-11-25 21:37:51] no changes added to commit (use "git add" and/or "git commit -a")
+[2025-11-25 21:37:59] [RUN] git add .
