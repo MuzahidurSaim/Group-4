@@ -6,6 +6,7 @@ from io import BytesIO
 import tensorflow as tf
 import os
 import json
+from pathlib import Path
 
 from starlette.middleware.cors import CORSMiddleware
 
@@ -24,9 +25,16 @@ app.add_middleware(
 )
 
 # --- Auto-detect latest model version ---
-MODEL_DIR = "../saved_models"
+# Get absolute path to saved_models directory relative to this script
+BASE_DIR = Path(__file__).resolve().parent
+MODEL_DIR = str(BASE_DIR.parent / "saved_models")
 
 def get_latest_model_path(model_dir: str):
+    if not os.path.exists(model_dir):
+        raise RuntimeError(f"Model directory not found: {model_dir}")
+    if not os.path.isdir(model_dir):
+        raise RuntimeError(f"Model path is not a directory: {model_dir}")
+    
     checkpoints = []
     for fname in os.listdir(model_dir):
         name, ext = os.path.splitext(fname)
