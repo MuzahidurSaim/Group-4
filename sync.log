@@ -10365,3 +10365,24 @@ Last commit: 935b283 - adding the "test images" folder (31 seconds ago) <Muzahid
 [2025-11-25 21:37:51] 
 [2025-11-25 21:37:51] no changes added to commit (use "git add" and/or "git commit -a")
 [2025-11-25 21:37:59] [RUN] git add .
+[2025-11-25 21:37:59] warning: in the working copy of 'sync.log', LF will be replaced by CRLF the next time Git touches it
+[2025-11-25 21:37:59] warning: in the working copy of 'training/training.ipynb', LF will be replaced by CRLF the next time Git touches it
+[2025-11-25 21:38:21] [RUN] git commit -m working on the app developement has started
+[2025-11-25 21:38:21] [working-on-app-started 2b7b17e] working on the app developement has started
+[2025-11-25 21:38:21]  43 files changed, 659 insertions(+), 273 deletions(-)
+[2025-11-25 21:38:21]  create mode 100644 frontend/.env copy
+[2025-11-25 21:38:21]  create mode 100644 gcp/main.py
+[2025-11-25 21:38:21]  create mode 100644 gcp/requirements.txt
+[2025-11-25 21:38:27] [RUN] git push -u origin working-on-app-started
+[2025-11-25 21:38:27] remote: 
+[2025-11-25 21:38:27] remote: Create a pull request for 'working-on-app-started' on GitHub by visiting:        
+[2025-11-25 21:38:27] remote:      https://github.com/MuzahidurSaim/Group-4/pull/new/working-on-app-started        
+[2025-11-25 21:38:27] remote: 
+[2025-11-25 21:38:27] branch 'working-on-app-started' set up to track 'origin/working-on-app-started'.
+[2025-11-25 21:38:27] To https://github.com/MuzahidurSaim/Group-4.git
+[2025-11-25 21:38:27]  * [new branch]      working-on-app-started -> working-on-app-started
+👉 Now open a Pull Request on GitHub for branch 'working-on-app-started' into main.
+Repo: ./Group-4
+Branch: working-on-app-started
+Last commit: 2b7b17e - working on the app developement has started (11 seconds ago) <MuzahidurSaim>
+
